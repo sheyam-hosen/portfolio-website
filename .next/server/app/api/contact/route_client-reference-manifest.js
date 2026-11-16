@@ -1,0 +1,1 @@
+globalThis.__RSC_MANIFEST=(globalThis.__RSC_MANIFEST||{});globalThis.__RSC_MANIFEST["/api/contact/route"]={"moduleLoading":{"prefix":"/_next/"},"ssrModuleMapping":{},"edgeSSRModuleMapping":{},"clientModules":{},"entryCSSFiles":{"C:\\Users\\Windows 10\\Downloads\\Projects\\next.js-potfolio\\app\\api\\contact\\route":[]},"rscModuleMapping":{},"edgeRscModuleMapping":{}};

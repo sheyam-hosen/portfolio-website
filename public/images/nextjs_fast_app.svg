@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="nxtBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#040407"/>
+      <stop offset="50%" stop-color="#090913"/>
+      <stop offset="100%" stop-color="#120e24"/>
+    </linearGradient>
+    <linearGradient id="nxtCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#121324" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0a0a14" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="nxtPurple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9333ea"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <filter id="nxtGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="35" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#nxtBg)"/>
+  <circle cx="700" cy="120" r="160" fill="#9333ea" opacity="0.14" filter="url(#nxtGlow)"/>
+  <circle cx="100" cy="380" r="160" fill="#6366f1" opacity="0.14" filter="url(#nxtGlow)"/>
+
+  <!-- Top App Window Bar -->
+  <rect x="40" y="24" width="720" height="48" rx="14" fill="#0d0e1c" stroke="#252445" stroke-width="1.2"/>
+  <circle cx="68" cy="48" r="5" fill="#ef4444"/>
+  <circle cx="86" cy="48" r="5" fill="#f59e0b"/>
+  <circle cx="104" cy="48" r="5" fill="#10b981"/>
+  <rect x="130" y="36" width="340" height="24" rx="6" fill="#17182e"/>
+  <text x="146" y="52" font-family="ui-monospace, monospace" font-size="11" fill="#a78bfa">localhost:3000 — My Fast Next.js App</text>
+
+  <!-- Hero Content inside browser window -->
+  <g transform="translate(60, 96)">
+    <!-- Badge -->
+    <rect x="0" y="0" width="180" height="26" rx="13" fill="#9333ea" opacity="0.2"/>
+    <circle cx="12" cy="13" r="3.5" fill="#c084fc"/>
+    <text x="24" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#d8b4fe">NEXT.JS 16 APP ROUTER</text>
+
+    <!-- Main Title -->
+    <text x="0" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#ffffff">Modern Web Application</text>
+    <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="url(#nxtPurple)">Built for Speed &amp; Scale</text>
+    
+    <text x="0" y="148" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94a3b8">Supercharged with React 19, Tailwind CSS v4, and dynamic Server Components.</text>
+
+    <!-- CTAs -->
+    <rect x="0" y="176" width="130" height="42" rx="10" fill="url(#nxtPurple)"/>
+    <text x="32" y="202" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Get Started</text>
+
+    <rect x="144" y="176" width="120" height="42" rx="10" fill="#17182e" stroke="#33335a" stroke-width="1.2"/>
+    <text x="176" y="202" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#c4b5fd">Learn More</text>
+
+    <!-- 3 Tech Feature Mini Cards on Right -->
+    <g transform="translate(430, -10)">
+      <!-- Card 1 -->
+      <rect x="0" y="10" width="250" height="68" rx="12" fill="url(#nxtCard)" stroke="#2b2952" stroke-width="1.2"/>
+      <rect x="14" y="24" width="40" height="40" rx="8" fill="#9333ea" opacity="0.2"/>
+      <text x="25" y="49" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#c084fc">N</text>
+      <text x="64" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Next.js 16 Core</text>
+      <text x="64" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#94a3b8">App Router &amp; SSR performance</text>
+
+      <!-- Card 2 -->
+      <rect x="0" y="90" width="250" height="68" rx="12" fill="url(#nxtCard)" stroke="#2b2952" stroke-width="1.2"/>
+      <rect x="14" y="104" width="40" height="40" rx="8" fill="#38bdf8" opacity="0.2"/>
+      <text x="25" y="129" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#38bdf8">R</text>
+      <text x="64" y="118" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">React 19 Hooks</text>
+      <text x="64" y="136" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Actions &amp; Server Components</text>
+
+      <!-- Card 3 -->
+      <rect x="0" y="170" width="250" height="68" rx="12" fill="url(#nxtCard)" stroke="#2b2952" stroke-width="1.2"/>
+      <rect x="14" y="184" width="40" height="40" rx="8" fill="#a855f7" opacity="0.2"/>
+      <text x="25" y="209" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="900" fill="#d8b4fe">T</text>
+      <text x="64" y="198" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Tailwind CSS v4</text>
+      <text x="64" y="216" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Modern responsive styling</text>
+    </g>
+  </g>
+</svg>

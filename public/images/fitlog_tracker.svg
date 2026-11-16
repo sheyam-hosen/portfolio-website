@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="fitBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090a14"/>
+      <stop offset="50%" stop-color="#0f1123"/>
+      <stop offset="100%" stop-color="#161330"/>
+    </linearGradient>
+    <linearGradient id="fitCardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#191c33" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#101222" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="fitAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="fitGreen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="fitGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="480" fill="url(#fitBg)"/>
+  <circle cx="680" cy="90" r="140" fill="#8b5cf6" opacity="0.12" filter="url(#fitGlow)"/>
+  <circle cx="120" cy="380" r="160" fill="#ec4899" opacity="0.1" filter="url(#fitGlow)"/>
+
+  <!-- Top App Bar -->
+  <rect x="30" y="24" width="740" height="52" rx="14" fill="#14172a" stroke="#2e355b" stroke-width="1.2"/>
+  <circle cx="56" cy="50" r="6" fill="#ef4444"/>
+  <circle cx="76" cy="50" r="6" fill="#f59e0b"/>
+  <circle cx="96" cy="50" r="6" fill="#10b981"/>
+  
+  <rect x="130" y="38" width="24" height="24" rx="6" fill="url(#fitAccent)"/>
+  <text x="137" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="14" fill="#ffffff">F</text>
+  <text x="162" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="16" fill="#ffffff">FitLog</text>
+  <text x="214" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="500" font-size="11" fill="#a78bfa">FITNESS TRACKER</text>
+
+  <!-- Navigation items -->
+  <rect x="520" y="38" width="70" height="24" rx="6" fill="#8b5cf6" opacity="0.2"/>
+  <text x="532" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#c4b5fd">Workouts</text>
+  <text x="612" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Favorites</text>
+  <text x="680" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#94a3b8">Daily Plan</text>
+
+  <!-- Metric Highlights Banner -->
+  <g transform="translate(30, 96)">
+    <!-- Stat 1 -->
+    <rect x="0" y="0" width="233" height="74" rx="14" fill="url(#fitCardGrad)" stroke="#2b3252" stroke-width="1.2"/>
+    <text x="18" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">DAILY DURATION</text>
+    <text x="18" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#ffffff">45 <tspan font-size="13" font-weight="500" fill="#a78bfa">MINS</tspan></text>
+    <circle cx="196" cy="37" r="18" fill="#8b5cf6" opacity="0.15"/>
+    <path d="M196 28 v9 h6" stroke="#a78bfa" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- Stat 2 -->
+    <rect x="253" y="0" width="234" height="74" rx="14" fill="url(#fitCardGrad)" stroke="#2b3252" stroke-width="1.2"/>
+    <text x="271" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">CALORIES BURNED</text>
+    <text x="271" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#ffffff">480 <tspan font-size="13" font-weight="500" fill="#ec4899">KCAL</tspan></text>
+    <circle cx="449" cy="37" r="18" fill="#ec4899" opacity="0.15"/>
+    <path d="M449 27 c2 3 5 5 5 9 a5 5 0 0 1 -10 0 c0 -3 2 -5 5 -9 z" fill="#ec4899"/>
+
+    <!-- Stat 3 -->
+    <rect x="507" y="0" width="233" height="74" rx="14" fill="url(#fitCardGrad)" stroke="#2b3252" stroke-width="1.2"/>
+    <text x="525" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">COMPLETED WORKOUTS</text>
+    <text x="525" y="56" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="800" fill="#ffffff">12 <tspan font-size="13" font-weight="500" fill="#10b981">SAVED</tspan></text>
+    <circle cx="703" cy="37" r="18" fill="#10b981" opacity="0.15"/>
+    <path d="M696 37 l5 5 l9 -9" stroke="#10b981" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Workout Cards Grid -->
+  <g transform="translate(30, 190)">
+    <!-- Workout Card 1 -->
+    <rect x="0" y="0" width="233" height="260" rx="16" fill="url(#fitCardGrad)" stroke="#31395f" stroke-width="1.2"/>
+    <rect x="14" y="14" width="205" height="110" rx="10" fill="#1e223c"/>
+    <rect x="24" y="24" width="70" height="20" rx="6" fill="#8b5cf6" opacity="0.3"/>
+    <text x="32" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#c4b5fd">HIIT CARDIO</text>
+    <!-- Visual graphic -->
+    <circle cx="116" cy="69" r="28" fill="url(#fitAccent)" opacity="0.2"/>
+    <path d="M102 69 h8 l4 -10 l8 20 l6 -14 l4 4 h10" stroke="#c084fc" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    
+    <text x="18" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="#ffffff">Full Body HIIT Blast</text>
+    <text x="18" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#94a3b8">30 mins • High Intensity • 350 kcal</text>
+    <rect x="18" y="196" width="197" height="36" rx="10" fill="url(#fitAccent)"/>
+    <text x="80" y="219" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">Start Workout</text>
+
+    <!-- Workout Card 2 -->
+    <rect x="253" y="0" width="234" height="260" rx="16" fill="url(#fitCardGrad)" stroke="#31395f" stroke-width="1.2"/>
+    <rect x="267" y="14" width="206" height="110" rx="10" fill="#1e223c"/>
+    <rect x="277" y="24" width="74" height="20" rx="6" fill="#10b981" opacity="0.3"/>
+    <text x="285" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#6ee7b7">STRENGTH</text>
+    <!-- Visual graphic -->
+    <circle cx="370" cy="69" r="28" fill="url(#fitGreen)" opacity="0.2"/>
+    <rect x="345" y="65" width="50" height="8" rx="4" fill="#34d399"/>
+    <rect x="342" y="58" width="6" height="22" rx="2" fill="#34d399"/>
+    <rect x="392" y="58" width="6" height="22" rx="2" fill="#34d399"/>
+    
+    <text x="271" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="#ffffff">Core &amp; Upper Strength</text>
+    <text x="271" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#94a3b8">45 mins • Intermediate • 410 kcal</text>
+    <rect x="271" y="196" width="198" height="36" rx="10" fill="url(#fitGreen)"/>
+    <text x="333" y="219" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#042f2e">Start Workout</text>
+
+    <!-- Workout Card 3 -->
+    <rect x="507" y="0" width="233" height="260" rx="16" fill="url(#fitCardGrad)" stroke="#31395f" stroke-width="1.2"/>
+    <rect x="521" y="14" width="205" height="110" rx="10" fill="#1e223c"/>
+    <rect x="531" y="24" width="76" height="20" rx="6" fill="#06b6d4" opacity="0.3"/>
+    <text x="541" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#67e8f9">MOBILITY</text>
+    <!-- Visual graphic -->
+    <circle cx="623" cy="69" r="28" fill="#06b6d4" opacity="0.2"/>
+    <path d="M610 75 c5 -14 21 -14 26 0" stroke="#38bdf8" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="623" cy="56" r="4" fill="#38bdf8"/>
+    
+    <text x="525" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="800" fill="#ffffff">Yoga &amp; Flexibility Flow</text>
+    <text x="525" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="500" fill="#94a3b8">25 mins • Beginner • 180 kcal</text>
+    <rect x="525" y="196" width="197" height="36" rx="10" fill="#06b6d4"/>
+    <text x="587" y="219" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#083344">Start Workout</text>
+  </g>
+</svg>
